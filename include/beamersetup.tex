@@ -1,0 +1,123 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% theme & layout
+\usetheme{Frankfurt}
+\useinnertheme{rectangles}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{frametitle}[default][colsep=-4bp,rounded=false,shadow=false]
+\setbeamertemplate{frametitle}
+{%
+    \nointerlineskip%
+    \begin{beamercolorbox}[wd=\paperwidth, sep=0.5ex]{frametitle}
+        % ,ht=3.5ex,dp=0.6ex
+
+        %\hspace*{1.3ex}%
+        \vspace*{-1ex}
+        \insertframetitle%
+        
+        %\hspace*{1.3ex}%
+        \small\insertframesubtitle%
+    \end{beamercolorbox}%
+    \begin{textblock*}{100mm}(11.6cm,.57cm)
+        \includegraphics[height=.8cm,keepaspectratio]{graph/Logo_GTCMT_white}
+    \end{textblock*}
+    
+    \vspace*{-2.57ex}%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=.25ex]{headline accent}\end{beamercolorbox}    
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{title page}[default][colsep=-4bp,rounded=false,shadow=false]
+\setbeamertemplate{title page}
+{
+    % \begin{textblock*}{200mm}(13.5cm,.5cm)
+    %     \href{https://www.\repolink}{\includegraphics[height=2cm,keepaspectratio]{graph/qr}}\hspace*{2ex}
+    % \end{textblock*}
+    \begin{textblock*}{200mm}(11.5cm,.5cm)
+        \href{http://www.musicinformatics.org}{\includegraphics[height=.8cm,keepaspectratio]{graph/Logo_GTCMT_black}}\hspace*{2ex}
+    \end{textblock*}
+
+    \vskip-10ex
+    \begin{beamercolorbox}[wd=\paperwidth,ht=.7\paperheight,dp=0.6ex,sep=.5ex]{frametitle} %35ex
+        \hspace*{1.3ex}\LARGE\inserttitle%
+        
+        \vspace*{.5ex}
+        
+        \hspace*{.8ex}\small\insertsubtitle%
+        
+        \vspace*{.5ex}
+    \end{beamercolorbox}%
+    \nointerlineskip%
+    \begin{beamercolorbox}[wd=\paperwidth,sep=1.8ex,dp=19ex]{page number in head/foot}
+        \small\insertauthor%
+        
+        \vspace{5.4ex}
+        \begin{flushright} %{200mm}(13.5cm,5cm)
+            \href{https://www.\repolink}{\includegraphics[height=2cm,keepaspectratio]{graph/qr}}\hspace*{2ex}
+        \end{flushright}
+    \end{beamercolorbox}%
+	%\addreference{\href{https://\repolink}{\repolink}}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\makeatother
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left,leftskip=1ex]{page number in head/foot}%
+    \inserttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right,rightskip=1ex]{page number in head/foot}%
+    \hfill
+    \insertframenumber{} / \inserttotalframenumber
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+%\makeatletter
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[default]%[rounded=false,shadow=false]
+\setbeamertemplate{itemize item}[square]
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{itemize subsubitem}[triangle]
+\setbeamertemplate{enumerate item}[square]
+\setbeamertemplate{enumerate subitem}[circle]
+\setbeamertemplate{enumerate subsubitem}[circle]
+%\setbeamertemplate{section in toc}[default]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% colors
+\setbeamercovered{transparent} %invisible
+
+\setbeamercolor{bibliography entry author}{fg=black}
+\setbeamercolor*{bibliography entry title}{fg=black}
+\setbeamercolor*{bibliography entry note}{fg=black}
+\setbeamercolor{frametitle}{fg=GTNavyBlue}
+\setbeamercolor{title}{fg=GTNavyBlue,bg=GTOfficialGold}
+\setbeamercolor{subtitle}{fg=GTNavyBlue}
+\setbeamercolor{frametitle}{fg=GTNavyBlue}
+\setbeamercolor{framesubtitle}{fg=GTNavyBlue}
+\setbeamercolor{mini frame}{fg=GTWhite, bg=black}
+\setbeamercolor{section in head/foot}{fg=GTWhite, bg=GTNavyBlue}
+\setbeamercolor{page number in head/foot}{fg=GTPiMile, bg=GTNavyBlue}
+\setbeamercolor{item projected}{fg=GTWhite, bg=black}
+\setbeamercolor{section in toc}{fg=black, bg=GTOfficialGold}
+\setbeamercolor{subsection in toc}{fg=darkgray, bg=GTOfficialGold}
+\setbeamercolor{background canvas}{bg=GTWhite} 
+\setbeamercolor{structure}{fg=GTOfficialGold}
+\setbeamercolor{title in headline}{fg=GTNavyBlue}
+\setbeamercolor{headline accent}{bg=GTNavyBlue} 
+% \setbeamercolor{headline}{bg=GTOfficialGold,fg=GTNavyBlue}
+% \setbeamercolor{author in headline}{fg=GTNavyBlue}
+% \setbeamercolor{institute in headline}{fg=GTNavyBlue}
+%\setbeamercolor{logo box}{bg=GTWhite,fg=GTNavyBlue}
+
+%---------------------------------------------------------------------------------

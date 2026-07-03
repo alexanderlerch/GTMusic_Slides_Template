@@ -1,0 +1,91 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% header
+\documentclass[aspectratio=169,t]{beamer}
+
+\input{./include/packages}
+\input{./include/definitions}
+\input{./include/beamersetup}
+
+
+\title{music informatics group slides template}
+\subtitle{latex} 
+\author[firstname lastname]{firstname lastname} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % generate title page
+    {
+    \setbeamertemplate{headline}{} 
+    \setbeamertemplate{footline}{} 
+    \begin{frame}
+        \titlepage
+    \end{frame}
+    }
+    \addtocounter{framenumber}{-1}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \section[intro]{introduction}
+        \begin{frame}{introduction}{basic slide example}
+            \vspace{-5mm}
+            % column setup
+            \begin{columns}[t]
+                \column{.6\linewidth}
+                    \begin{itemize}
+                        \item   \textbf{top level bullet}
+                            \begin{itemize}
+                                \item   second level bullet
+                                    \begin{itemize}
+                                        \item   third level bullet
+                                    \end{itemize}
+                            \end{itemize}
+                        \bigskip % or smallskip
+                        \item<2->   \textbf{staged bullet}
+                            \begin{itemize}
+                                \item   \ldots
+                            \end{itemize}
+                    \end{itemize}
+                \column{.4\linewidth}
+                    \vspace{12mm}
+                    \begin{figure}%
+                        \includegraphics[width=\columnwidth]{MIG2025}%
+                    \end{figure}
+            \end{columns}
+
+            % custom command to add link to the right of the slide
+            \addreference{\href{https://www.musicinformatics.org}{www.musicinformatics.org}}
+        \end{frame}
+            
+         \begin{frame}{introduction}{bibliography}
+            \begin{itemize}
+                \item   literature can be added to \texttt{references.bib} and will appear in the bibliography at the end \cite{lerch_introduction_2023}
+            \end{itemize}
+        \end{frame}
+        
+    \section[section]{another section}
+        \begin{frame}\frametitle{more info}\framesubtitle{~}
+            \begin{itemize}
+                \item icons from \texttt{graph/icon} can be added to the bottom right using the \texttt{\textbackslash inserticon\{iconname\}} command
+            \end{itemize}
+            \inserticon{scholar}
+        \end{frame}
+        
+    \section[contact]{thank you}
+        \begin{frame}\frametitle{thank you!}\framesubtitle{~}
+             \bigskip
+              \begin{block}{contact}
+                  email: \href{mailto:firstname.lastname@gatech.edu}{firstname.lastname@gatech.edu}
+                  
+                  \bigskip
+                  music informatics group: 
+                  \href{http://www.musicinformatics.org}{www.musicinformatics.org}
+              \end{block}
+              \inserticon{mail}
+          \end{frame}
+      
+    \begin{frame}[allowframebreaks]{references}{~}
+        \tiny
+        \printbibliography[title={references}]
+    \end{frame}
+\end{document}
+

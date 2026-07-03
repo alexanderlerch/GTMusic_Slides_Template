@@ -1,0 +1,41 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% packages
+\usepackage{pict2e}
+\usepackage{epic}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{units}
+\usepackage{fancybox}
+\usepackage[absolute,overlay]{textpos} 
+\usepackage{animate}
+\usepackage{gensymb}
+\usepackage{multirow}
+\usepackage{silence}
+\usepackage{tikz}
+\usepackage{multirow}
+\usepackage[backend=bibtex,style=ieee]{biblatex}
+\AtEveryCitekey{\iffootnote{\tiny}{}}
+\addbibresource{include/lerch}
+\AtBeginBibliography{\tiny}
+
+\AtBeginDocument{%
+  \hypersetup{%
+    linkcolor=white,%
+    urlcolor=GTNavyBlue
+  }%
+}
+
+
+% fontsize
+\let\Tiny=\tiny
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% warnings
+\pdfsuppresswarningpagegroup=1
+\WarningFilter{biblatex}{Patching footnotes failed}
+\WarningFilter{latexfont}{Font shape}
+\WarningFilter{latexfont}{Some font shapes}
+\WarningFilter{gensymb}{Not defining}
+
