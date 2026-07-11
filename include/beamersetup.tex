@@ -10,19 +10,18 @@
 \setbeamertemplate{frametitle}
 {%
     \nointerlineskip%
-    \begin{beamercolorbox}[wd=\paperwidth, sep=0.5ex]{frametitle}
-        % ,ht=3.5ex,dp=0.6ex
-
-        %\hspace*{1.3ex}%
-        \vspace*{-1ex}
-        \insertframetitle%
+    \begin{beamercolorbox}[wd=\paperwidth, sep=.5ex]{frametitle}
+        \hspace*{.5ex}\insertframetitle%
         
-        %\hspace*{1.3ex}%
-        \small\insertframesubtitle%
+        \hspace*{.5ex}\small\insertframesubtitle%
+
+        \vspace*{-8ex}
+        \begin{flushright} 
+            \hfill\href{http://www.musicinformatics.org}{\includegraphics[height=1cm]{graph/School_of_Music_White}}
+        \end{flushright}
+        \vspace*{-2.5ex}
+
     \end{beamercolorbox}%
-    \begin{textblock*}{100mm}(11.6cm,.57cm)
-        \includegraphics[height=.8cm,keepaspectratio]{graph/Logo_GTCMT_white}
-    \end{textblock*}
     
     \vspace*{-2.57ex}%
     \begin{beamercolorbox}[wd=\paperwidth,ht=.25ex]{headline accent}\end{beamercolorbox}    
@@ -33,38 +32,35 @@
 \setbeamertemplate{title page}[default][colsep=-4bp,rounded=false,shadow=false]
 \setbeamertemplate{title page}
 {
-    % \begin{textblock*}{200mm}(13.5cm,.5cm)
-    %     \href{https://www.\repolink}{\includegraphics[height=2cm,keepaspectratio]{graph/qr}}\hspace*{2ex}
-    % \end{textblock*}
-    \begin{textblock*}{200mm}(11.5cm,.5cm)
-        \href{http://www.musicinformatics.org}{\includegraphics[height=.8cm,keepaspectratio]{graph/Logo_GTCMT_black}}\hspace*{2ex}
-    \end{textblock*}
-
-    \vskip-10ex
-    \begin{beamercolorbox}[wd=\paperwidth,ht=.7\paperheight,dp=0.6ex,sep=.5ex]{frametitle} %35ex
+     \begin{beamercolorbox}[wd=\paperwidth,ht=.6\paperheight,dp=0.6ex,sep=.5ex]{frametitle} 
+         \begin{columns}
+            \column{.7\linewidth}
+            \column{.4\linewidth}
+                \vspace*{-24ex}
+                \begin{flushright}
+                    \hfill\href{http://www.musicinformatics.org}{\includegraphics[width=.8\columnwidth]{graph/School_of_Music_Navy}}\hspace*{2ex}
+                \end{flushright}
+            \end{columns}        
         \hspace*{1.3ex}\LARGE\inserttitle%
         
         \vspace*{.5ex}
         
-        \hspace*{.8ex}\small\insertsubtitle%
+        \hspace*{.95ex}\small\insertsubtitle%
         
         \vspace*{.5ex}
     \end{beamercolorbox}%
     \nointerlineskip%
-    \begin{beamercolorbox}[wd=\paperwidth,sep=1.8ex,dp=19ex]{page number in head/foot}
-        \small\insertauthor%
+    \begin{beamercolorbox}[wd=\paperwidth,sep=1.7ex,dp=19ex]{page number in head/foot}
+        \hspace*{.2ex}\small\insertauthor%
         
-        \vspace{5.4ex}
-        \begin{flushright} %{200mm}(13.5cm,5cm)
+        \begin{flushright}
             \href{https://www.\repolink}{\includegraphics[height=2cm,keepaspectratio]{graph/qr}}\hspace*{2ex}
         \end{flushright}
     \end{beamercolorbox}%
-	%\addreference{\href{https://\repolink}{\repolink}}
 }
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\makeatother
 \setbeamertemplate{footline}
 {
   \leavevmode%
@@ -78,7 +74,6 @@
   \end{beamercolorbox}}%
   \vskip0pt%
 }
-%\makeatletter
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -115,9 +110,11 @@
 \setbeamercolor{structure}{fg=GTOfficialGold}
 \setbeamercolor{title in headline}{fg=GTNavyBlue}
 \setbeamercolor{headline accent}{bg=GTNavyBlue} 
+\setbeamercolor{button}{fg=magenta} 
 % \setbeamercolor{headline}{bg=GTOfficialGold,fg=GTNavyBlue}
 % \setbeamercolor{author in headline}{fg=GTNavyBlue}
 % \setbeamercolor{institute in headline}{fg=GTNavyBlue}
 %\setbeamercolor{logo box}{bg=GTWhite,fg=GTNavyBlue}
 
 %---------------------------------------------------------------------------------
+
