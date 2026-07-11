@@ -31,7 +31,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{title page}[default][colsep=-4bp,rounded=false,shadow=false]
 \setbeamertemplate{title page}
-{
+{   \vspace*{-1.5ex}
+    \nointerlineskip%
      \begin{beamercolorbox}[wd=\paperwidth,ht=.6\paperheight,dp=0.6ex,sep=.5ex]{frametitle} 
          \begin{columns}
             \column{.7\linewidth}
@@ -52,7 +53,8 @@
     \nointerlineskip%
     \begin{beamercolorbox}[wd=\paperwidth,sep=1.7ex,dp=19ex]{page number in head/foot}
         \hspace*{.2ex}\small\insertauthor%
-        
+
+        \vspace*{1ex}
         \begin{flushright}
             \href{https://www.\repolink}{\includegraphics[height=2cm,keepaspectratio]{graph/qr}}\hspace*{2ex}
         \end{flushright}
